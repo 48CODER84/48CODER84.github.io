@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Referrer Example</title>
+</head>
+<body>
+  <h1>Referrer Test</h1>
+  
+  <script>
+    if (document.referrer) {
+      console.log("You came from:", document.referrer);
+      document.body.insertAdjacentHTML(
+        "beforeend",
+        `<p>You were redirected here from: <b>${document.referrer}</b></p>`
+      );
+    } else {
+      console.log("No referrer detected (direct access or referrer hidden).");
+      document.body.insertAdjacentHTML(
+        "beforeend",
+        `<p>No referrer detected.</p>`
+      );
+    }
+  </script>
+</body>
+</html>
