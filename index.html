@@ -8,21 +8,8 @@
   <h1>Referrer Test</h1>
   
   <script>
-    let a = window.open("about:blank");
-
-fetch("https://48coder84.github.io/cookieclicker/index.html")
-  .then(r => r.text())
-  .then(html => {
-
-    let patched = html.replace(
-      /<head>/i,
-      `<head><base href="https://48coder84.github.io/cookieclicker/">`
-    );
-
-    a.document.open();
-    a.document.write(patched);
-    a.document.close();
-  });
+    
+   
   </script>
 </body>
 </html>
