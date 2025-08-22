@@ -1,4 +1,4 @@
-funcion cookieclicker(){
+function cookieclicker(){
    let a = window.open("about:blank");
 
 fetch("https://48coder84.github.io/cookieclicker/index.html")
