@@ -46,20 +46,31 @@ function proxy(){
 }
 function minecraft188(){
    let a = window.open("about:blank");
-
-fetch("https://48coder84.github.io/eaglecraft1.8.8/mc/1.8.8/index.html")
-  .then(r => r.text())
-  .then(html => {
-
-    let patched = html.replace(
-      /<head>/i,
-      `<head><base href="https://48coder84.github.io/eaglecraft1.8.8/mc/1.8.8/">`
-    );
-
-    a.document.open();
-    a.document.write(patched);
-    a.document.close();
-  });
+   a.document.write(`
+  <html>
+    <head>
+      <title>Google Doc</title>
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+        }
+        object {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      </style>
+    </head>
+    <body>
+      <object data="https://eaglercraft1-8.github.io/"></object>
+    </body>
+  </html>
+`);
+   a.document.close();
 }
 function minecraft112(){}
 
