@@ -53,7 +53,7 @@ fetch("https://48coder84.github.io/eaglecraft1.8.8/mc/1.8.8/index.html")
 
     let patched = html.replace(
       /<head>/i,
-      `<head><base href="https://48coder84.github.io/eaglecraft1.8.8/">`
+      `<head><base href="https://48coder84.github.io/eaglecraft1.8.8/mc/1.8.8/">`
     );
 
     a.document.open();
