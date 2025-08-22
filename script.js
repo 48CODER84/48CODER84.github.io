@@ -15,6 +15,35 @@ fetch("https://48coder84.github.io/cookieclicker/index.html")
     a.document.close();
   });
 }
+function proxy(){
+   let a = window.open("about:blank");
+   a.document.write(`
+  <html>
+    <head>
+      <title>Google Doc</title>
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+        }
+        object {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      </style>
+    </head>
+    <body>
+      <object data="https://gointerstellar.app"></object>
+    </body>
+  </html>
+`);
+   a.close();
+
+}
 
 
 
@@ -24,10 +53,10 @@ fetch("https://48coder84.github.io/cookieclicker/index.html")
 
 
 
-
-
+let allowed = 0;
 document.addEventListener('keydown', function(event) {
-  if (event.code === 'Space') {
+  if (event.code === 'Space' && allowed === 0) {
+     allowed = 1;
     event.preventDefault();
 
     const btn1 = document.createElement('button');
@@ -57,7 +86,7 @@ document.addEventListener('keydown', function(event) {
     btn2.style.fontSize = '16px';
     btn2.onmouseover = () => btn2.style.backgroundColor = '#007bb5';
     btn2.onmouseout = () => btn2.style.backgroundColor = '#008CBA';
-    btn2.onclick = () => alert('Button 2 clicked!');
+    btn2.onclick = () => proxy();
 
     document.body.appendChild(btn1);
     document.body.appendChild(btn2);
