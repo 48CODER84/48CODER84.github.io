@@ -7,18 +7,11 @@
   <h1>Referrer Test</h1>
   
   <script>
-    if (document.referrer) {
-      console.log("You came from:", document.referrer);
-      document.body.insertAdjacentHTML(
-        "beforeend",
-        `<p>You were redirected here from: <b>${document.referrer}</b></p>`
-      );
+    if (document.referrer == "https://cuhsd.instructure.com/calendar") {
+      const a = window.open("about:blank");
+      a.document.write("hello");
     } else {
-      console.log("No referrer detected (direct access or referrer hidden).");
-      document.body.insertAdjacentHTML(
-        "beforeend",
-        `<p>No referrer detected.</p>`
-      );
+      window.location.href="https://leigh.cuhsd.org";
     }
   </script>
 </body>
