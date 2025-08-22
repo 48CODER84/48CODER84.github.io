@@ -44,7 +44,8 @@ function proxy(){
    a.document.close();
 
 }
-
+function minecraft188(){}
+function minecraft112(){}
 
 
 
@@ -73,7 +74,6 @@ document.addEventListener('keydown', function(event) {
     btn1.onmouseout = () => btn1.style.backgroundColor = '#4CAF50';
     btn1.onclick = () => cookieclicker();
 
-
     const btn2 = document.createElement('button');
     btn2.textContent = 'Proxy';
     btn2.style.padding = '10px 20px';
@@ -88,7 +88,38 @@ document.addEventListener('keydown', function(event) {
     btn2.onmouseout = () => btn2.style.backgroundColor = '#008CBA';
     btn2.onclick = () => proxy();
 
+    const btn3 = document.createElement('button');
+    btn3.textContent = 'Minecraft 1.8.8';
+    btn3.style.padding = '10px 20px';
+    btn3.style.margin = '10px';
+    btn3.style.backgroundColor = '#f39c12';
+    btn3.style.color = 'white';
+    btn3.style.border = 'none';
+    btn3.style.borderRadius = '8px';
+    btn3.style.cursor = 'pointer';
+    btn3.style.fontSize = '16px';
+    btn3.onmouseover = () => btn3.style.backgroundColor = '#e67e22';
+    btn3.onmouseout = () => btn3.style.backgroundColor = '#f39c12';
+    btn3.onclick = () => minecraft188();
+
+    const btn4 = document.createElement('button');
+    btn4.textContent = 'Minecraft 1.12';
+    btn4.style.padding = '10px 20px';
+    btn4.style.margin = '10px';
+    btn4.style.backgroundColor = '#9b59b6';
+    btn4.style.color = 'white';
+    btn4.style.border = 'none';
+    btn4.style.borderRadius = '8px';
+    btn4.style.cursor = 'pointer';
+    btn4.style.fontSize = '16px';
+    btn4.onmouseover = () => btn4.style.backgroundColor = '#8e44ad';
+    btn4.onmouseout = () => btn4.style.backgroundColor = '#9b59b6';
+    btn4.onclick = () => minecraft112();
+
     document.body.appendChild(btn1);
     document.body.appendChild(btn2);
+    document.body.appendChild(btn3);
+    document.body.appendChild(btn4);
   }
 });
+
