@@ -41,7 +41,7 @@ function proxy(){
     </body>
   </html>
 `);
-   a.close();
+   a.document.close();
 
 }
 
