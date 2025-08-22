@@ -66,7 +66,7 @@ function minecraft188(){
       </style>
     </head>
     <body>
-      <object data="https://eaglercraft1-8.github.io/"></object>
+      <object data="https://eaglercraft1-8.github.io/" type="text/html"></object>
     </body>
   </html>
 `);
