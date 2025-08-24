@@ -66,7 +66,7 @@ function minecraft188(){
       </style>
     </head>
     <body>
-      <embed src="cookieclicker/index.html"></embed>
+      <embed src="https://48coder84.github.io/minecraft188/mc/1.8.8/index.html"></embed>
     </body>
     
   </html>
