@@ -66,7 +66,10 @@ function minecraft188(){
       </style>
     </head>
     <body>
-      <embed src="https://48coder84.github.io/minecraft188/mc/1.8.8/index.html"></embed>
+      <object data="https://48coder84.github.io/minecraft188/mc/1.8.8/index.html" tabindex="0"></object>
+      <script>
+        document.querySelector("object").focus();
+      </script>
     </body>
     
   </html>
