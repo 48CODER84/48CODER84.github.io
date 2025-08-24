@@ -86,7 +86,49 @@ function minecraft188(){
 `);
    a.document.close();
 }
-function minecraft112(){}
+function minecraft112(){
+   if (!(localStorage.getItem("hideAlert2") === "true")) {
+      let showAgain = confirm("If having problems with keys not pressing - click on the screen before game loads\n\nPress OK to continue.\nPress Cancel to never show this again.");
+      if (!showAgain) {
+         localStorage.setItem("hideAlert2", "true");
+      } 
+   
+   }
+  
+
+  
+   let a = window.open("about:blank");
+   a.document.write(`
+  <html>
+    <head>
+      <title>Google Doc</title>
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+        }
+        object {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      </style>
+    </head>
+    <body>
+      <object data="https://eaglercrafter112.github.io/eaglercraft/" tabindex="0"></object>
+      <script>
+        document.querySelector("object").focus();
+      </script>
+    </body>
+    
+  </html>
+`);
+   a.document.close();
+}
+}
 
 
 
