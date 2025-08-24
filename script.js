@@ -128,7 +128,7 @@ function minecraft112(){
 `);
    a.document.close();
 }
-}
+
 
 
 
