@@ -58,7 +58,7 @@ function minecraft188(){
           width: 100%;
           overflow: hidden;
         }
-        embed {
+        object {
           width: 100%;
           height: 100%;
           border: none;
