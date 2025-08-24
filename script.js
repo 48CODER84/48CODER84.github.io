@@ -45,6 +45,14 @@ function proxy(){
 
 }
 function minecraft188(){
+   if (localStorage.getItem("hideAlert") === "true") {
+    return;
+  }
+  let showAgain = confirm("If having problems with keys not pressing - click on the screen before game loads\n\nPress OK to continue.\nPress Cancel to never show this again.");
+
+  if (!showAgain) {
+    localStorage.setItem("hideAlert", "true");
+  }
    let a = window.open("about:blank");
    a.document.write(`
   <html>
