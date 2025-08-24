@@ -76,7 +76,7 @@ function minecraft188(){
       </style>
     </head>
     <body>
-      <object data="https://eaglercraft1-8.github.io/" tabindex="0"></object>
+      <object data="https://eaglercraft-88a.pages.dev/" tabindex="0"></object>
       <script>
         document.querySelector("object").focus();
       </script>
