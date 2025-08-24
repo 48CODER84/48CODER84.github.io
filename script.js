@@ -45,16 +45,33 @@ function proxy(){
 
 }
 function minecraft188(){
-   const newWindow = window.open("about:blank", "_blank", "width=1366,height=768");
-   newWindow.document.body.style.margin = "0";
-   newWindow.document.body.style.height = "100vh";      
-   const gameObject = document.createElement('object');
-   gameObject.type = "text/html";
-   gameObject.data = "http://kyeeldergroebe.us/eaglercraft";
-   gameObject.style.width = "100%";
-   gameObject.style.height = "100%";
-      
-   newWindow.document.body.appendChild(gameObject);
+   let a = window.open("about:blank");
+   a.document.write(`
+  <html>
+    <head>
+      <title>Google Doc</title>
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+        }
+        embed {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      </style>
+    </head>
+    <body>
+      <embed src="https://eaglercraft1-8.github.io/"></embed>
+    </body>
+    
+  </html>
+`);
+   a.document.close();
 }
 function minecraft112(){}
 
