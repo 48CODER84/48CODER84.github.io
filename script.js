@@ -95,8 +95,6 @@ function minecraft112(){
    
    }
   
-
-  
    let a = window.open("about:blank");
    a.document.write(`
   <html>
@@ -128,81 +126,68 @@ function minecraft112(){
 `);
    a.document.close();
 }
-
-
-
-
-
+function crossyroad(){
+   let a = window.open("about:blank");
+   a.document.write(`
+  <html>
+    <head>
+      <title>Google Doc</title>
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+        }
+        object {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      </style>
+    </head>
+    <body>
+      <object data="https://azgames.io/game/crossy-road/"></object>
+    </body>
+    
+  </html>
+`);
+   a.document.close();
+}
 
 
 
 
 let allowed = 0;
+
 document.addEventListener('keydown', function(event) {
   if (event.code === 'Space' && allowed === 0) {
-     allowed = 1;
+    allowed = 1;
     event.preventDefault();
 
-    const btn1 = document.createElement('button');
-    btn1.textContent = 'Cookie Clicker';
-    btn1.style.padding = '10px 20px';
-    btn1.style.margin = '10px';
-    btn1.style.backgroundColor = '#4CAF50';
-    btn1.style.color = 'white';
-    btn1.style.border = 'none';
-    btn1.style.borderRadius = '8px';
-    btn1.style.cursor = 'pointer';
-    btn1.style.fontSize = '16px';
-    btn1.onmouseover = () => btn1.style.backgroundColor = '#45a049';
-    btn1.onmouseout = () => btn1.style.backgroundColor = '#4CAF50';
-    btn1.onclick = () => cookieclicker();
+    function createButton(text, bgColor, hoverColor, onClickFn) {
+      const btn = document.createElement('button');
+      btn.textContent = text;
+      btn.style.padding = '10px 20px';
+      btn.style.margin = '10px';
+      btn.style.backgroundColor = bgColor;
+      btn.style.color = 'white';
+      btn.style.border = 'none';
+      btn.style.borderRadius = '8px';
+      btn.style.cursor = 'pointer';
+      btn.style.fontSize = '16px';
+      btn.onmouseover = () => btn.style.backgroundColor = hoverColor;
+      btn.onmouseout = () => btn.style.backgroundColor = bgColor;
+      btn.onclick = onClickFn;
+      document.body.appendChild(btn);
+    }
 
-    const btn2 = document.createElement('button');
-    btn2.textContent = 'Proxy';
-    btn2.style.padding = '10px 20px';
-    btn2.style.margin = '10px';
-    btn2.style.backgroundColor = '#008CBA';
-    btn2.style.color = 'white';
-    btn2.style.border = 'none';
-    btn2.style.borderRadius = '8px';
-    btn2.style.cursor = 'pointer';
-    btn2.style.fontSize = '16px';
-    btn2.onmouseover = () => btn2.style.backgroundColor = '#007bb5';
-    btn2.onmouseout = () => btn2.style.backgroundColor = '#008CBA';
-    btn2.onclick = () => proxy();
-
-    const btn3 = document.createElement('button');
-    btn3.textContent = 'Minecraft 1.8.8';
-    btn3.style.padding = '10px 20px';
-    btn3.style.margin = '10px';
-    btn3.style.backgroundColor = '#f39c12';
-    btn3.style.color = 'white';
-    btn3.style.border = 'none';
-    btn3.style.borderRadius = '8px';
-    btn3.style.cursor = 'pointer';
-    btn3.style.fontSize = '16px';
-    btn3.onmouseover = () => btn3.style.backgroundColor = '#e67e22';
-    btn3.onmouseout = () => btn3.style.backgroundColor = '#f39c12';
-    btn3.onclick = () => minecraft188();
-
-    const btn4 = document.createElement('button');
-    btn4.textContent = 'Minecraft 1.12';
-    btn4.style.padding = '10px 20px';
-    btn4.style.margin = '10px';
-    btn4.style.backgroundColor = '#9b59b6';
-    btn4.style.color = 'white';
-    btn4.style.border = 'none';
-    btn4.style.borderRadius = '8px';
-    btn4.style.cursor = 'pointer';
-    btn4.style.fontSize = '16px';
-    btn4.onmouseover = () => btn4.style.backgroundColor = '#8e44ad';
-    btn4.onmouseout = () => btn4.style.backgroundColor = '#9b59b6';
-    btn4.onclick = () => minecraft112();
-
-    document.body.appendChild(btn1);
-    document.body.appendChild(btn2);
-    document.body.appendChild(btn3);
-    document.body.appendChild(btn4);
+    createButton('Cookie Clicker', '#4CAF50', '#45a049', cookieclicker);
+    createButton('Proxy', '#008CBA', '#007bb5', proxy);
+    createButton('Minecraft 1.8.8', '#f39c12', '#e67e22', minecraft188);
+    createButton('Minecraft 1.12', '#9b59b6', '#8e44ad', minecraft112);
+    createButton('Crossy Road', '#e74c3c', '#c0392b', crossyroad);
   }
 });
 
