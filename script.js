@@ -50,7 +50,7 @@ function minecraft188(){
    newWindow.document.body.style.height = "100vh";      
    const gameObject = document.createElement('object');
    gameObject.type = "text/html";
-   gameObject.data = "https://eaglercraft1-8.github.io/";
+   gameObject.data = "http://kyeeldergroebe.us/eaglercraft";
    gameObject.style.width = "100%";
    gameObject.style.height = "100%";
       
