@@ -66,7 +66,7 @@ function minecraft188(){
       </style>
     </head>
     <body>
-      <embed src="https://eaglercraft1-8.github.io/"></embed>
+      <embed src="cookieclicker/index.html"></embed>
     </body>
     
   </html>
