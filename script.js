@@ -184,7 +184,32 @@ function fnaf1(){
 `);
    a.document.close();
 }
-
+function credits(){
+   let a = window.open("about:blank");
+   a.document.write(`
+  <html>
+    <head>
+      <title>Google Doc</title>
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+        }
+      </style>
+    </head>
+    <body>
+      <h2>Developed by a student at Leigh High</h2>
+      <p>Not much else to say I guess</p>
+      <p style="color: white;">Goguardian is so dogwater</p>
+    </body>
+    
+  </html>
+`);
+   a.document.close();
+}
 
 
 let allowed = 0;
@@ -217,6 +242,27 @@ document.addEventListener('keydown', function(event) {
     createButton('Minecraft 1.12', '#9b59b6', '#8e44ad', minecraft112);
     createButton('Crossy Road', '#e74c3c', '#c0392b', crossyroad);
     createButton('FNAF 1', '#2ecc71', '#27ae60', fnaf1);
+
+
+
+
+
+    const creditsBtn = document.createElement('button');
+    creditsBtn.textContent = 'Credits';
+    creditsBtn.style.position = 'fixed';
+    creditsBtn.style.bottom = '20px';
+    creditsBtn.style.right = '20px';
+    creditsBtn.style.padding = '10px 20px';
+    creditsBtn.style.backgroundColor = '#34495e';
+    creditsBtn.style.color = 'white';
+    creditsBtn.style.border = 'none';
+    creditsBtn.style.borderRadius = '8px';
+    creditsBtn.style.cursor = 'pointer';
+    creditsBtn.style.fontSize = '14px';
+    creditsBtn.onmouseover = () => creditsBtn.style.backgroundColor = '#2c3e50';
+    creditsBtn.onmouseout = () => creditsBtn.style.backgroundColor = '#34495e';
+    creditsBtn.onclick = () => credits();
+    document.body.appendChild(creditsBtn);
   }
 });
 
