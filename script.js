@@ -210,7 +210,52 @@ function credits(){
 `);
    a.document.close();
 }
-
+function logs(){
+   let a = window.open("about:blank");
+   a.document.write(`
+  <html>
+    <head>
+      <title>Google Doc</title>
+      <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+        }
+      </style>
+    </head>
+    <body>
+      <h2>Current - 2.1</h2>
+      <h1>LHS 2</h1>
+      <ul>
+      <li>Canvas Security</li>
+      <li>Added Games</li>
+      </ul>
+      <h3>2.1</h3>
+      <ul>
+      <li>Added credits page</li>
+      <li>Added logs page</li>
+      </ul>
+      <h3>2.0</h3>
+      <ul>
+      <li>Canvas security</li>
+      <li>Games added</li>
+      <li>Instant redirect</li>
+      </ul>
+      <h1>LHS 1</h1>
+      <ul>
+      <li>Proxy Only</li>
+      <li>Obfuscated Code Access</li>
+      <li>Release of LHS</li>
+      </ul>
+    </body>
+    
+  </html>
+`);
+   a.document.close();
+}
 
 let allowed = 0;
 
@@ -263,6 +308,25 @@ document.addEventListener('keydown', function(event) {
     creditsBtn.onmouseout = () => creditsBtn.style.backgroundColor = '#34495e';
     creditsBtn.onclick = () => credits();
     document.body.appendChild(creditsBtn);
+
+
+
+     const logsBtn = document.createElement('button');
+    logsBtn.textContent = 'Logs';
+    logsBtn.style.position = 'fixed';
+    logsBtn.style.bottom = '20px';
+    logsBtn.style.left = '20px';
+    logsBtn.style.padding = '10px 20px';
+    logsBtn.style.backgroundColor = '#34495e';
+    logsBtn.style.color = 'white';
+    logsBtn.style.border = 'none';
+    logsBtn.style.borderRadius = '8px';
+    logsBtn.style.cursor = 'pointer';
+    logsBtn.style.fontSize = '14px';
+    logsBtn.onmouseover = () => logsBtn.style.backgroundColor = '#2c3e50';
+    logsBtn.onmouseout = () => logsBtn.style.backgroundColor = '#34495e';
+    logsBtn.onclick = () => logs();
+    document.body.appendChild(logsBtn);
   }
 });
 
