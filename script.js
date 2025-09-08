@@ -208,6 +208,8 @@ document.addEventListener('keydown', function(event) {
     createButton('2048', '#f1c40f', '#f39c12', 'https://funschoolmath.github.io/2048/index.html');
     //createButton('Slope', '#9b59b6', '#8e44ad', 'http://storage.y8.com/y8-studio/unity_webgl/Gani/slope-game_2025_v3/index.html');
     createButton('Drive Mad', '#1abc9c', '#16a085', 'https://thatkidfr.github.io/drive-mad/');
+    createButton('Hollow Knight', '#3498db', '#2980b9', 'https://thatkidfr.github.io/hollow_knight/');
+    
 
 
 
