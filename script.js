@@ -140,9 +140,10 @@ function logs(){
       <li>Canvas Security</li>
       <li>Added Games</li>
       </ul>
-      <h3>2.3</h3>
+      <h3>2.3 - In Progress</h3>
       <ul>
       <li>Added Hollow Knight</li>
+      <li>Added Polytrack</li>
       </ul>
       <h3>2.2</h3>
       <ul>
