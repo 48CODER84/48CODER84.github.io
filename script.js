@@ -51,6 +51,23 @@ fetch("https://thatkidfr.github.io/index.html")
     a.document.close();
   });
 }
+function extragames(){
+  let a = window.open("about:blank");
+
+fetch("https://thatkidfr.github.io/passwordwithvercel/index.html")
+  .then(r => r.text())
+  .then(html => {
+
+    let patched = html.replace(
+      /<head>/i,
+      `<head><base href="https://thatkidfr.github.io/passwordwithvercel/">`
+    );
+
+    a.document.open();
+    a.document.write(patched);
+    a.document.close();
+  });
+}
 function minecraft188(){
    if (!(localStorage.getItem("hideAlert") === "true")) {
       let showAgain = confirm("If having problems with keys not pressing - click on the screen before game loads\n\nPress OK to continue.\nPress Cancel to never show this again.");
@@ -240,7 +257,7 @@ document.addEventListener('keydown', function(event) {
 
 
 
-     const logsBtn = document.createElement('button');
+    const logsBtn = document.createElement('button');
     logsBtn.textContent = 'Logs';
     logsBtn.style.position = 'fixed';
     logsBtn.style.bottom = '20px';
@@ -256,5 +273,25 @@ document.addEventListener('keydown', function(event) {
     logsBtn.onmouseout = () => logsBtn.style.backgroundColor = '#34495e';
     logsBtn.onclick = () => logs();
     document.body.appendChild(logsBtn);
+
+
+    const extraGamesBtn = document.createElement('button');
+    extraGamesBtn.textContent = 'Extra Games';
+    extraGamesBtn.style.position = 'fixed';
+    extraGamesBtn.style.bottom = '20px';
+    extraGamesBtn.style.left = '50%';
+    extraGamesBtn.style.transform = 'translateX(-50%)';
+    extraGamesBtn.style.padding = '10px 20px';
+    extraGamesBtn.style.backgroundColor = '#000000';
+    extraGamesBtn.style.color = 'white';
+    extraGamesBtn.style.border = 'none';
+    extraGamesBtn.style.borderRadius = '8px';
+    extraGamesBtn.style.cursor = 'pointer';
+    extraGamesBtn.style.fontSize = '14px';
+    extraGamesBtn.onmouseover = () => extraGamesBtn.style.backgroundColor = '#424242';
+    extraGamesBtn.onmouseout = () => extraGamesBtn.style.backgroundColor = '#000000';
+    extraGamesBtn.onclick = () => extragames();
+    document.body.appendChild(extraGamesBtn);
+
   }
 });
