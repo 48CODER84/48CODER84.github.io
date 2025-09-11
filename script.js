@@ -151,14 +151,15 @@ function logs(){
       </style>
     </head>
     <body>
-      <h2>Current - 2.2</h2>
+      <h2>Current - 2.3</h2>
       <h1>LHS 2</h1>
       <ul>
       <li>Canvas Security</li>
       <li>Added Games</li>
       </ul>
-      <h3>2.3 - In Progress</h3>
+      <h3>2.3</h3>
       <ul>
+      <li>Added Extra Games for Beta Testing</li>
       <li>Added Hollow Knight</li>
       <li>Added Polytrack</li>
       </ul>
@@ -177,9 +178,9 @@ function logs(){
       </ul>
       <h3>2.0</h3>
       <ul>
-      <li>Canvas security</li>
-      <li>Games added</li>
-      <li>Instant redirect</li>
+      <li>Canvas Security</li>
+      <li>Games Added</li>
+      <li>Instant Redirect</li>
       </ul>
       <h1>LHS 1</h1>
       <ul>
