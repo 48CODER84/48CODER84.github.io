@@ -152,6 +152,7 @@ function logs(){
     </head>
     <body>
       <h2>Current - 2.3</h2>
+      <h3>---New Proxy Soon---</h3>
       <h1>LHS 2</h1>
       <ul>
       <li>Canvas Security</li>
@@ -160,6 +161,7 @@ function logs(){
       <h3>2.4 - In Progress</h3>
       <ul>
       <li>Added New Polytrack</li>
+      <li>Added Bee Swarm Simulator</li>
       </ul>
       <h3>2.3</h3>
       <ul>
@@ -238,6 +240,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Hollow Knight', '#3498db', '#2980b9', 'https://thatkidfr.github.io/hollow_knight/');
     createButton('Old Polytrack', '#e67e22', '#d35400', 'https://thatkidfr.github.io/polytrack/');
     createButton('New Polytrack', '#3498db', '#2980b9', 'https://app-polytrack.kodub.com/0.5.1/');
+    createButton('BSS', '#3498db', '#2980b9', 'https://dddatt.github.io/bss/');
 
 
     
