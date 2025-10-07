@@ -1,3 +1,4 @@
+alert("Security Update Coming Soon! (Check logs for more info)");
 function defaultBrowser(url){
   if (url == "cookieclicker"){
     cookieclicker();
@@ -151,17 +152,18 @@ function logs(){
       </style>
     </head>
     <body>
-      <h2>Current - 2.3</h2>
-      <h3>---New Proxy Soon---</h3>
+      <h2>Current - 2.4</h2>
+      <h3>Coming soon - Local storage based identification system to remove canvas security and provide quality of life</h3>
+      <h3>Coming soon - LHS Proxy delayed for next update</h3>
       <h1>LHS 2</h1>
       <ul>
       <li>Canvas Security</li>
       <li>Added Games</li>
       </ul>
-      <h3>2.4 - In Progress</h3>
+      <h3>2.4</h3>
       <ul>
       <li>Added New Polytrack</li>
-      <li>Added Bee Swarm Simulator</li>
+      <li>Added Bee Swarm Simulator *bugged*</li>
       </ul>
       <h3>2.3</h3>
       <ul>
