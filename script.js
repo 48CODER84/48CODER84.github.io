@@ -1,4 +1,4 @@
-alert("Security Update Coming Soon! (Check logs for more info)");
+alert("On October 18th, 2025, this website will implement its new security feature, removing the need for the calendar on Canvas. You will not be able to access the site on launch. You will have to ask the owner of the site to activate the account for you.");
 function defaultBrowser(url){
   if (url == "cookieclicker"){
     cookieclicker();
