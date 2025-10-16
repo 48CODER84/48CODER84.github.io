@@ -132,7 +132,7 @@ function credits(){
       <ul>
       <li>P​​r​​o​​x​​y front and backend deployed and put together by site owner</li>
       <li>P​​r​​o​​x​​​y front-end created by another student</li>
-      <li>U​​​​l​​t​​​​​​r​​a​​​​v​​i​​​​​o​l​​​e​​​t​ P​​​​ro​​​​​x​​​​​​y Backend</li>
+      <li>U​​​​l​​t​​​​​​r​​a​​​​v​​i​​​​​o​l​​​e​​​t​ p​​​​ro​​​​​x​​​​​​y backend</li>
       <li>P​​​​r​​​​​o​​​​​x​​​​​y template from epite</li>
       </ul>
       <p style="color: white;">The front-end is pretty sigma</p>
