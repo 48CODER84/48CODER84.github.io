@@ -164,6 +164,7 @@ function logs(){
       <ul>
       <li>Added New Polytrack</li>
       <li>Added Bee Swarm Simulator *bugged*</li>
+      <li>Added Help Button</li>
       </ul>
       <h3>2.3</h3>
       <ul>
