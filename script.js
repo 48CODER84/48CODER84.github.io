@@ -128,6 +128,13 @@ function credits(){
     </head>
     <body>
       <h2>Developed by a student at Leigh High</h2>
+      <strong><h3>LHS Proxy</h3></strong>
+      <ul>
+      <li>Proxy front and backend deployed and put together by site owner</li>
+      <li>Proxy front-end created by another student<p style="color: white;">he's pretty sigma</p></li>
+      <li>Ultraviolet Proxy Backend</li>
+      <li>Proxy template from epite</li>
+      </ul>
       <p>Not much else to say I guess</p>
       <p style="color: white;">Goguardian is so dogwater</p>
     </body>
