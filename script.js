@@ -232,7 +232,7 @@ document.addEventListener('keydown', function(event) {
 
     const helpBtn = document.createElement('button');
     helpBtn.textContent = 'Help';
-    btn.style.margin = '10px';
+    helpBtn.style.margin = '10px';
     helpBtn.style.padding = '10px 20px';
     helpBtn.style.backgroundColor = '#34495e';
     helpBtn.style.color = 'white';
