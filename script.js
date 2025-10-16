@@ -202,6 +202,9 @@ function logs(){
 `);
    a.document.close();
 }
+function help(){
+  alert("Email robodave699@gmail.com about any questions/reports, as I've had numerous questions asked with no way to respond through forms");
+}
 
 let allowed = 0;
 
@@ -229,13 +232,14 @@ document.addEventListener('keydown', function(event) {
 
     const helpBtn = document.createElement('button');
     helpBtn.textContent = 'Help';
+    btn.style.margin = '10px';
     helpBtn.style.padding = '10px 20px';
     helpBtn.style.backgroundColor = '#34495e';
     helpBtn.style.color = 'white';
     helpBtn.style.border = 'none';
     helpBtn.style.borderRadius = '8px';
     helpBtn.style.cursor = 'pointer';
-    helpBtn.style.fontSize = '14px';
+    helpBtn.style.fontSize = '16px';
     helpBtn.onmouseover = () => helpBtn.style.backgroundColor = '#2c3e50';
     helpBtn.onmouseout = () => helpBtn.style.backgroundColor = '#34495e';
     helpBtn.onclick = () => help();
