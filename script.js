@@ -203,7 +203,7 @@ function logs(){
    a.document.close();
 }
 function help(){
-  alert("Email robodave699@gmail.com about any questions/reports, as I've had numerous questions asked with no way to respond through forms");
+  alert("Email robodave699@gmail.com about any questions/reports, as I've had numerous questions asked with no way to respond through forms - DO NOT USE SCHOOL EMAIL: IT WILL NOT SEND");
 }
 
 let allowed = 0;
