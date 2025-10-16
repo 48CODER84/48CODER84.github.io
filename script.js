@@ -227,6 +227,20 @@ document.addEventListener('keydown', function(event) {
       document.body.appendChild(btn);
     }
 
+    const helpBtn = document.createElement('button');
+    helpBtn.textContent = 'Help';
+    helpBtn.style.padding = '10px 20px';
+    helpBtn.style.backgroundColor = '#34495e';
+    helpBtn.style.color = 'white';
+    helpBtn.style.border = 'none';
+    helpBtn.style.borderRadius = '8px';
+    helpBtn.style.cursor = 'pointer';
+    helpBtn.style.fontSize = '14px';
+    helpBtn.onmouseover = () => helpBtn.style.backgroundColor = '#2c3e50';
+    helpBtn.onmouseout = () => helpBtn.style.backgroundColor = '#34495e';
+    helpBtn.onclick = () => help();
+    document.body.appendChild(helpBtn);
+
     createButton('Game Suggestions', '#9b59b6', '#8e44ad', 'https://docs.google.com/forms/d/e/1FAIpQLSe2tpYcWk9raN6wWIF7qKJilht7aFi6PViRnLt2zfiymXL_ig/viewform?usp=dialog');
     createButton('Cookie Clicker', '#4CAF50', '#45a049', 'cookieclicker');
     createButton('Proxy', '#008CBA', '#007bb5', 'https://gointerstellar.app');
