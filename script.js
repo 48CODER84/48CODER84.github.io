@@ -1,4 +1,4 @@
-alert("LHS V3 IS HERE! Save files have been saved, regardless of if you exported your file or not!");
+alert("LHS V3 IS HERE! Save files have been saved, regardless of if you exported your file or not! A discord server has also been made for announcements: https://discord.gg/2Mwf5URA");
 function defaultBrowser(url){
   if (url == "cookieclicker"){
     cookieclicker();
@@ -216,7 +216,7 @@ function logs(){
    a.document.close();
 }
 function help(){
-  alert("Email robodave699@gmail.com about any questions/reports, as I've had numerous questions asked with no way to respond through forms - DO NOT USE SCHOOL EMAIL: IT WILL NOT SEND");
+  alert("Ask in discord: https://discord.gg/2Mwf5URA OR email robodave699@gmail.com about any questions/reports - DO NOT USE SCHOOL EMAIL: IT WILL NOT SEND");
 }
 
 let allowed = 0;
