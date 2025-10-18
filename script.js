@@ -160,9 +160,13 @@ function logs(){
       </style>
     </head>
     <body>
-      <h2>Current - 2.4</h2>
-      <h3>Coming soon - Local storage based identification system to remove canvas security and provide quality of life</h3>
-      <h3>Coming soon - LHS Proxy delayed for next update</h3>
+      <h2>Current - 3.0</h2>
+      <h3>More games coming soon!</h3>
+      <h1>LHS 3</h1>
+      <ul>
+      <li>UUID Security</li>
+      <li>Faster Site Access</li>
+      </ul>
       <h1>LHS 2</h1>
       <ul>
       <li>Canvas Security</li>
