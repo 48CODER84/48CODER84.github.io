@@ -1,4 +1,4 @@
-alert("SAVE YOUR DATA/SAVE FILE - Starting October 18th, 2025, this website will implement its new security feature, removing the need for the calendar on Canvas. You will not be able to access the site on launch. You will have to ask the owner of the site to activate the account for you.");
+alert("LHS V3 IS HERE! Save files have been saved, regardless of if you exported your file or not!");
 function defaultBrowser(url){
   if (url == "cookieclicker"){
     cookieclicker();
