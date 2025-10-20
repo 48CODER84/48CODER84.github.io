@@ -1,4 +1,4 @@
-alert("LHS V3 IS HERE! Save files have been saved, regardless of if you exported your file or not! A discord server has also been made for announcements: https://discord.gg/2Mwf5URA");
+alert("LHS V3 IS HERE! Save files have been saved, regardless of if you exported your file or not! A discord server has also been made for announcements: https://discord.gg/2Mwf5URA  NOTICE: LHS Proxy delayed due to issues");
 function defaultBrowser(url){
   if (url == "cookieclicker"){
     cookieclicker();
@@ -133,7 +133,6 @@ function credits(){
       <li>P​​r​​o​​x​​y front and backend deployed and put together by site owner</li>
       <li>P​​r​​o​​x​​​y front-end created by another student</li>
       <li>U​​​​l​​t​​​​​​r​​a​​​​v​​i​​​​​o​l​​​e​​​t​ p​​​​ro​​​​​x​​​​​​y backend</li>
-      <li>P​​​​r​​​​​o​​​​​x​​​​​y template from epite</li>
       </ul>
       <p style="color: white;">The front-end is pretty sigma</p>
       <p>Not much else to say I guess</p>
