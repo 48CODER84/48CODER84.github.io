@@ -272,7 +272,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Hollow Knight', '#3498db', '#2980b9', 'https://thatkidfr.github.io/hollow_knight/');
     createButton('Old Polytrack', '#e67e22', '#d35400', 'https://thatkidfr.github.io/polytrack/');
     createButton('New Polytrack', '#3498db', '#2980b9', 'https://app-polytrack.kodub.com/0.5.1/');
-    createButton('BSS', '#3498db', '#2980b9', 'https://dddatt.github.io/bss/');
+    //createButton('BSS', '#3498db', '#2980b9', 'https://dddatt.github.io/bss/');
 
 
     
