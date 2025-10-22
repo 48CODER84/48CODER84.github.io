@@ -262,6 +262,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Proxy', '#008CBA', '#007bb5', 'https://gointerstellar.app');
     createButton('Minecraft 1.8.8', '#f39c12', '#e67e22', 'minecraft188');
     createButton('Minecraft 1.12', '#9b59b6', '#8e44ad', 'https://eaglercrafter112.github.io/eaglercraft/');
+    createButton('COD Zombies', '#2e8a0c', '#1d5907', 'https://db.duck.theducklair.com/html/cod_zombies_portable/index.html');
     createButton('Crossy Road', '#e74c3c', '#c0392b', 'https://azgames.io/game/crossy-road/');
     createButton('FNAF 1', '#2ecc71', '#27ae60', 'https://thatkidfr.github.io/FNAF1/');
     createButton('BlackJack', '#3498db', '#2980b9', 'https://funschoolmath.github.io/BlackJack/index.html');
