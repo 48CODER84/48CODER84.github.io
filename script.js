@@ -166,6 +166,10 @@ function logs(){
       <li>UUID Security</li>
       <li>Faster Site Access</li>
       </ul>
+      <h3>3.1</h3>
+      <ul>
+      <li>Added COD Zombies</li>
+      </ul>
       <h1>LHS 2</h1>
       <ul>
       <li>Canvas Security</li>
