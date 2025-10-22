@@ -279,6 +279,7 @@ document.addEventListener('keydown', function(event) {
     createButton('New Polytrack', '#3498db', '#2980b9', 'https://app-polytrack.kodub.com/0.5.1/');
     //createButton('BSS', '#3498db', '#2980b9', 'https://dddatt.github.io/bss/');
     createButton('COD Zombies', '#2e8a0c', '#1d5907', 'https://db.duck.theducklair.com/html/cod_zombies_portable/index.html');
+    createButton('Race Survival Arena King', '#17d4b4', '#13ab92', 'https://db.duck.theducklair.com/html/race_survival_arena_king/index.html');
 
 
     
