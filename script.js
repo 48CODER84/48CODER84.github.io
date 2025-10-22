@@ -169,6 +169,7 @@ function logs(){
       <h3>3.1</h3>
       <ul>
       <li>Added COD Zombies</li>
+      <li>Removed BSS - May be added back later</li>
       </ul>
       <h1>LHS 2</h1>
       <ul>
@@ -266,7 +267,6 @@ document.addEventListener('keydown', function(event) {
     createButton('Proxy', '#008CBA', '#007bb5', 'https://gointerstellar.app');
     createButton('Minecraft 1.8.8', '#f39c12', '#e67e22', 'minecraft188');
     createButton('Minecraft 1.12', '#9b59b6', '#8e44ad', 'https://eaglercrafter112.github.io/eaglercraft/');
-    createButton('COD Zombies', '#2e8a0c', '#1d5907', 'https://db.duck.theducklair.com/html/cod_zombies_portable/index.html');
     createButton('Crossy Road', '#e74c3c', '#c0392b', 'https://azgames.io/game/crossy-road/');
     createButton('FNAF 1', '#2ecc71', '#27ae60', 'https://thatkidfr.github.io/FNAF1/');
     createButton('BlackJack', '#3498db', '#2980b9', 'https://funschoolmath.github.io/BlackJack/index.html');
@@ -278,6 +278,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Old Polytrack', '#e67e22', '#d35400', 'https://thatkidfr.github.io/polytrack/');
     createButton('New Polytrack', '#3498db', '#2980b9', 'https://app-polytrack.kodub.com/0.5.1/');
     //createButton('BSS', '#3498db', '#2980b9', 'https://dddatt.github.io/bss/');
+    createButton('COD Zombies', '#2e8a0c', '#1d5907', 'https://db.duck.theducklair.com/html/cod_zombies_portable/index.html');
 
 
     
