@@ -170,6 +170,7 @@ function logs(){
       <ul>
       <li>Added COD Zombies</li>
       <li>Removed BSS - May be added back later</li>
+      <li>Added Race Survival Arena King</li>
       </ul>
       <h1>LHS 2</h1>
       <ul>
