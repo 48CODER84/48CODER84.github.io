@@ -1,4 +1,4 @@
-alert("LHS V3 IS HERE! Save files have been saved, regardless of if you exported your file or not! A discord server has also been made for announcements: https://discord.gg/2Mwf5URA  NOTICE: LHS Proxy delayed due to issues");
+alert("Major games update soon!");
 function defaultBrowser(url){
   if (url == "cookieclicker"){
     cookieclicker();
@@ -171,6 +171,7 @@ function logs(){
       <li>Added COD Zombies</li>
       <li>Removed BSS - May be added back later</li>
       <li>Added Race Survival Arena King</li>
+      <li>Added Ultrakill</li>
       </ul>
       <h1>LHS 2</h1>
       <ul>
@@ -281,6 +282,7 @@ document.addEventListener('keydown', function(event) {
     //createButton('BSS', '#3498db', '#2980b9', 'https://dddatt.github.io/bss/');
     createButton('COD Zombies', '#2e8a0c', '#1d5907', 'https://db.duck.theducklair.com/html/cod_zombies_portable/index.html');
     createButton('Race Survival Arena King', '#17d4b4', '#13ab92', 'https://db.duck.theducklair.com/html/race_survival_arena_king/index.html');
+    createButton('Ultrakill', '#eb2f1a', '#cc2916', 'https://db.duck.theducklair.com/html/ultrakill/');
 
 
     
