@@ -173,6 +173,7 @@ function logs(){
       <li>Added Race Survival Arena King</li>
       <li>Added Ultrakill</li>
       <li>Added 1v1.lol</li>
+      <li>Added Retro Bowl College</li>
       </ul>
       <h1>LHS 2</h1>
       <ul>
