@@ -172,6 +172,7 @@ function logs(){
       <li>Removed BSS - May be added back later</li>
       <li>Added Race Survival Arena King</li>
       <li>Added Ultrakill</li>
+      <li>Added 1v1.lol</li>
       </ul>
       <h1>LHS 2</h1>
       <ul>
