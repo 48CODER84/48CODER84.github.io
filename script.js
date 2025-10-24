@@ -175,6 +175,7 @@ function logs(){
       <li>Added 1v1.lol</li>
       <li>Added Retro Bowl College</li>
       <li>Added Getting Over It</li>
+      <li>Added Clicker Heroes</li>
       </ul>
       <h1>LHS 2</h1>
       <ul>
@@ -289,6 +290,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Ultrakill', '#eb2f1a', '#cc2916', 'https://db.duck.theducklair.com/html/ultrakill/');
     createButton('1v1.lol', '#19acbd', '#1697a6', 'https://development.churchinhuntsville.org/resources/semag/1v1lol/index.html');
     createButton('Getting Over It', '#26c9b9', '#20ab9d', 'https://development.churchinhuntsville.org/resources/semag/getting-over-it/index.html');
+    createButton('Clicker Heroes', '#28d439', '#1db52c', 'https://development.churchinhuntsville.org/resources/semag/clickerheroes/index.html');
     
 
 
