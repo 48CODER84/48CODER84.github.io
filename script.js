@@ -283,6 +283,7 @@ document.addEventListener('keydown', function(event) {
     createButton('COD Zombies', '#2e8a0c', '#1d5907', 'https://db.duck.theducklair.com/html/cod_zombies_portable/index.html');
     createButton('Race Survival Arena King', '#17d4b4', '#13ab92', 'https://db.duck.theducklair.com/html/race_survival_arena_king/index.html');
     createButton('Ultrakill', '#eb2f1a', '#cc2916', 'https://db.duck.theducklair.com/html/ultrakill/');
+    createButton('1v1.lol', '#19acbd', '#1697a6', 'https://development.churchinhuntsville.org/resources/semag/1v1lol/index.html');
 
 
     
