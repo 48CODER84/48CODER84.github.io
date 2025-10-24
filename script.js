@@ -174,6 +174,7 @@ function logs(){
       <li>Added Ultrakill</li>
       <li>Added 1v1.lol</li>
       <li>Added Retro Bowl College</li>
+      <li>Added Getting Over It</li>
       </ul>
       <h1>LHS 2</h1>
       <ul>
@@ -287,6 +288,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Race Survival Arena King', '#17d4b4', '#13ab92', 'https://db.duck.theducklair.com/html/race_survival_arena_king/index.html');
     createButton('Ultrakill', '#eb2f1a', '#cc2916', 'https://db.duck.theducklair.com/html/ultrakill/');
     createButton('1v1.lol', '#19acbd', '#1697a6', 'https://development.churchinhuntsville.org/resources/semag/1v1lol/index.html');
+    createButton('Getting Over It', '#26c9b9', '#20ab9d', 'https://development.churchinhuntsville.org/resources/semag/getting-over-it/index.html');
     
 
 
