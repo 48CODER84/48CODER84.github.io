@@ -274,6 +274,7 @@ document.addEventListener('keydown', function(event) {
     createButton('FNAF 1', '#2ecc71', '#27ae60', 'https://thatkidfr.github.io/FNAF1/');
     createButton('BlackJack', '#3498db', '#2980b9', 'https://funschoolmath.github.io/BlackJack/index.html');
     createButton('Retro Bowl', '#e67e22', '#d35400', 'https://funschoolmath.github.io/retrobowl/index.html');
+    createButton('Retro Bowl College', '#89d124', '#71ad1d', 'https://db.duck.theducklair.com/html/retro_bowl_college/');
     createButton('2048', '#f1c40f', '#f39c12', 'https://funschoolmath.github.io/2048/index.html');
     //createButton('Slope', '#9b59b6', '#8e44ad', 'http://storage.y8.com/y8-studio/unity_webgl/Gani/slope-game_2025_v3/index.html');
     createButton('Drive Mad', '#1abc9c', '#16a085', 'https://thatkidfr.github.io/drive-mad/');
@@ -285,7 +286,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Race Survival Arena King', '#17d4b4', '#13ab92', 'https://db.duck.theducklair.com/html/race_survival_arena_king/index.html');
     createButton('Ultrakill', '#eb2f1a', '#cc2916', 'https://db.duck.theducklair.com/html/ultrakill/');
     createButton('1v1.lol', '#19acbd', '#1697a6', 'https://development.churchinhuntsville.org/resources/semag/1v1lol/index.html');
-    createButton('Retro Bowl College', '#89d124', '#71ad1d', 'https://db.duck.theducklair.com/html/retro_bowl_college/');
+    
 
 
     
