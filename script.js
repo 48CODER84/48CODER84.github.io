@@ -166,6 +166,10 @@ function logs(){
       <li>UUID Security</li>
       <li>Faster Site Access</li>
       </ul>
+      <h3>3.2</h3>
+      <ul>
+      <li>Added secret button, only sigmas may click</li>
+      </ul>
       <h3>3.1</h3>
       <ul>
       <li>Added COD Zombies</li>
@@ -270,7 +274,7 @@ document.addEventListener('keydown', function(event) {
 
     createButton('Game Suggestions', '#9b59b6', '#8e44ad', 'https://docs.google.com/forms/d/e/1FAIpQLSe2tpYcWk9raN6wWIF7qKJilht7aFi6PViRnLt2zfiymXL_ig/viewform?usp=dialog');
     createButton('Cookie Clicker', '#4CAF50', '#45a049', 'cookieclicker');
-    createButton('Proxy', '#008CBA', '#007bb5', 'https://gointerstellar.app');
+    createButton('interstellar', '#008CBA', '#007bb5', 'https://gointerstellar.app');
     createButton('Minecraft 1.8.8', '#f39c12', '#e67e22', 'minecraft188');
     createButton('Minecraft 1.12', '#9b59b6', '#8e44ad', 'https://eaglercrafter112.github.io/eaglercraft/');
     createButton('Crossy Road', '#e74c3c', '#c0392b', 'https://azgames.io/game/crossy-road/');
@@ -291,7 +295,7 @@ document.addEventListener('keydown', function(event) {
     createButton('1v1.lol', '#19acbd', '#1697a6', 'https://development.churchinhuntsville.org/resources/semag/1v1lol/index.html');
     createButton('Getting Over It', '#26c9b9', '#20ab9d', 'https://development.churchinhuntsville.org/resources/semag/getting-over-it/index.html');
     createButton('Clicker Heroes', '#28d439', '#1db52c', 'https://development.churchinhuntsville.org/resources/semag/clickerheroes/index.html');
-    
+    createButton('click if sigma', '#fc0303', '#0703fc', 'https://theannoyingsite.com');
 
 
     
