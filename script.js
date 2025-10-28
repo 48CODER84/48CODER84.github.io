@@ -295,7 +295,6 @@ document.addEventListener('keydown', function(event) {
     createButton('1v1.lol', '#19acbd', '#1697a6', 'https://development.churchinhuntsville.org/resources/semag/1v1lol/index.html');
     createButton('Getting Over It', '#26c9b9', '#20ab9d', 'https://development.churchinhuntsville.org/resources/semag/getting-over-it/index.html');
     createButton('Clicker Heroes', '#28d439', '#1db52c', 'https://development.churchinhuntsville.org/resources/semag/clickerheroes/index.html');
-    createButton('click if sigma', '#fc0303', '#0703fc', 'https://theannoyingsite.com');
 
 
     
