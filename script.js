@@ -1,4 +1,3 @@
-alert("Major games update soon!");
 function defaultBrowser(url){
   if (url == "cookieclicker"){
     cookieclicker();
@@ -159,8 +158,9 @@ function logs(){
       </style>
     </head>
     <body>
-      <h2>Current - 3.0</h2>
+      <h2>Current - 3.1</h2>
       <h3>More games coming soon!</h3>
+      <h3>THE FINALE - Security update v4 coming eventually</h3>
       <h1>LHS 3</h1>
       <ul>
       <li>UUID Security</li>
