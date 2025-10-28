@@ -168,7 +168,7 @@ function logs(){
       </ul>
       <h3>3.2</h3>
       <ul>
-      <li>Added secret button, only sigmas may click</li>
+      <li>Nvm</li>
       </ul>
       <h3>3.1</h3>
       <ul>
