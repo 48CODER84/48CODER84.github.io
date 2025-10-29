@@ -127,6 +127,7 @@ function credits(){
     </head>
     <body>
       <h2>Developed by a student at Leigh High</h2>
+      <h3>Help from another student at Leigh High</h3>
       <strong><h3>LHS Proxy</h3></strong>
       <ul>
       <li>P​​r​​o​​x​​y front and backend deployed and put together by site owner</li>
