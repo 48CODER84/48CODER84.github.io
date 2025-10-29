@@ -158,7 +158,9 @@ function logs(){
       </style>
     </head>
     <body>
-      <h2>Current - 3.1</h2>
+      <h2>Current - 3.11</h2>
+      <h3>Added minecraft 1.8, no idea if this differs from the 1.8.8 on the site already but idc, more links!</h3>
+      <h2>3.1</h2>
       <h3>More games coming soon!</h3>
       <h3>THE FINALE - Security update v4 coming eventually</h3>
       <h1>LHS 3</h1>
@@ -276,6 +278,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Cookie Clicker', '#4CAF50', '#45a049', 'cookieclicker');
     createButton('Interstellar Proxy', '#008CBA', '#007bb5', 'https://gointerstellar.app');
     createButton('Minecraft 1.8.8', '#f39c12', '#e67e22', 'minecraft188');
+    createButton('Minecraft 1.8', '#f39c12', '#e67e22', 'https://eaglercraft1-8.github.io');
     createButton('Minecraft 1.12', '#9b59b6', '#8e44ad', 'https://eaglercrafter112.github.io/eaglercraft/');
     createButton('Crossy Road', '#e74c3c', '#c0392b', 'https://azgames.io/game/crossy-road/');
     createButton('FNAF 1', '#2ecc71', '#27ae60', 'https://thatkidfr.github.io/FNAF1/');
