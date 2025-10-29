@@ -274,7 +274,7 @@ document.addEventListener('keydown', function(event) {
 
     createButton('Game Suggestions', '#9b59b6', '#8e44ad', 'https://docs.google.com/forms/d/e/1FAIpQLSe2tpYcWk9raN6wWIF7qKJilht7aFi6PViRnLt2zfiymXL_ig/viewform?usp=dialog');
     createButton('Cookie Clicker', '#4CAF50', '#45a049', 'cookieclicker');
-    createButton('interstellar', '#008CBA', '#007bb5', 'https://gointerstellar.app');
+    createButton('Interstellar Proxy', '#008CBA', '#007bb5', 'https://gointerstellar.app');
     createButton('Minecraft 1.8.8', '#f39c12', '#e67e22', 'minecraft188');
     createButton('Minecraft 1.12', '#9b59b6', '#8e44ad', 'https://eaglercrafter112.github.io/eaglercraft/');
     createButton('Crossy Road', '#e74c3c', '#c0392b', 'https://azgames.io/game/crossy-road/');
