@@ -169,8 +169,8 @@ function logs(){
       </ul>
       <h3>3.2</h3>
       <ul>
-      <li>Nvm</li>
-      <li>Added another link for MC in case one stops working</li>
+      <li>Added Tenis</li>
+      <li>Added an alt link for MC 1.8.8</li>
       </ul>
       <h3>3.1</h3>
       <ul>
