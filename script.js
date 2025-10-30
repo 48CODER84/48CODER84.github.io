@@ -8,30 +8,30 @@ function defaultBrowser(url){
     return 0;
   }
   let a = window.open("about:blank");
-   a.document.write(`
-  <html>
-    <head>
-      <title>Google Doc</title>
-      <style>
-        html, body {
-          margin: 0;
-          padding: 0;
-          height: 100%;
-          width: 100%;
-          overflow: hidden;
-        }
-        object {
-          width: 100%;
-          height: 100%;
-          border: none;
-        }
-      </style>
-    </head>
-    <body>
-      <object data="`+url+`"></object>
-    </body>
-  </html>
-`);
+   a.document.write('\n'+
+  '<html>' +
+  '  <head>' +
+  '    <title>Google Doc</title>' +
+  '    <style>' +
+  '      html, body {' +
+  '        margin: 0;' +
+  '        padding: 0;' +
+  '        height: 100%;' +
+  '        width: 100%;' +
+  '        overflow: hidden;' +
+  '      }' +
+  '      object {' +
+  '        width: 100%;' +
+  '        height: 100%;' +
+  '        border: none;' +
+  '      }' +
+  '    </style>' +
+  '  </head>' +
+  '  <body>' +
+  '    <object data="'+url+'"></object>' +
+  '  </body>' +
+  '</html>' +
+'');
    a.document.close();
 }
 function cookieclicker(){
