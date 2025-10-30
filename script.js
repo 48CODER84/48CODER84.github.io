@@ -43,7 +43,7 @@ fetch("https://thatkidfr.github.io/index.html")
 
     let patched = html.replace(
       /<head>/i,
-      `<head><base href="https://thatkidfr.github.io/">`
+      '<head><base href="https://thatkidfr.github.io/">'
     );
 
     a.document.open();
@@ -60,7 +60,7 @@ fetch("https://thatkidfr.github.io/passwordwithvercel/index.html")
 
     let patched = html.replace(
       /<head>/i,
-      `<head><base href="https://thatkidfr.github.io/passwordwithvercel/">`
+      '<head><base href="https://thatkidfr.github.io/passwordwithvercel/">'
     );
 
     a.document.open();
