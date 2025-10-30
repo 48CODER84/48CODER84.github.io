@@ -145,91 +145,20 @@ function credits(){
 }
 function logs(){
    let a = window.open("about:blank");
-   a.document.write(`
-  <html>
-    <head>
-      <title>Google Doc</title>
-      <style>
-        html, body {
-          margin: 0;
-          padding: 0;
-          height: 100%;
-          width: 100%;
-        }
-      </style>
-    </head>
-    <body>
-      <h2>Current - 3.1</h2>
-      <h3>More games coming soon!</h3>
-      <h3>THE FINALE - Security update v4 coming eventually</h3>
-      <h1>LHS 3</h1>
-      <ul>
-      <li>UUID Security</li>
-      <li>Faster Site Access</li>
-      </ul>
-      <h3>3.2</h3>
-      <ul>
-      <li>Added Tenis</li>
-      <li>Added an alt link for MC 1.8.8</li>
-      </ul>
-      <h3>3.1</h3>
-      <ul>
-      <li>Added COD Zombies</li>
-      <li>Removed BSS - May be added back later</li>
-      <li>Added Race Survival Arena King</li>
-      <li>Added Ultrakill</li>
-      <li>Added 1v1.lol</li>
-      <li>Added Retro Bowl College</li>
-      <li>Added Getting Over It</li>
-      <li>Added Clicker Heroes</li>
-      </ul>
-      <h1>LHS 2</h1>
-      <ul>
-      <li>Canvas Security</li>
-      <li>Added Games</li>
-      </ul>
-      <h3>2.4</h3>
-      <ul>
-      <li>Added New Polytrack</li>
-      <li>Added Bee Swarm Simulator *bugged*</li>
-      <li>Added Help Button</li>
-      </ul>
-      <h3>2.3</h3>
-      <ul>
-      <li>Added Extra Games for Beta Testing</li>
-      <li>Added Hollow Knight</li>
-      <li>Added Polytrack</li>
-      </ul>
-      <h3>2.2</h3>
-      <ul>
-      <li>Added Form Suggestions</li>
-      <li>Added BlackJack</li>
-      <li>Added Retro Bowl</li>
-      <li>Added 2048</li>
-      <li>Added Drive Mad</li>
-      </ul>
-      <h3>2.1</h3>
-      <ul>
-      <li>Added credits page</li>
-      <li>Added logs page</li>
-      </ul>
-      <h3>2.0</h3>
-      <ul>
-      <li>Canvas Security</li>
-      <li>Games Added</li>
-      <li>Instant Redirect</li>
-      </ul>
-      <h1>LHS 1</h1>
-      <ul>
-      <li>Proxy Only</li>
-      <li>Obfuscated Code Access</li>
-      <li>Release of LHS</li>
-      </ul>
-    </body>
-    
-  </html>
-`);
-   a.document.close();
+
+fetch("https://thatkidfr.github.io/logs/index.html")
+  .then(r => r.text())
+  .then(html => {
+
+    let patched = html.replace(
+      /<head>/i,
+      '<head><base href="https://thatkidfr.github.io/logs">'
+    );
+
+    a.document.open();
+    a.document.write(patched);
+    a.document.close();
+  });
 }
 function help(){
   alert("Ask in discord: https://discord.gg/2Mwf5URA OR email robodave699@gmail.com about any questions/reports - DO NOT USE SCHOOL EMAIL: IT WILL NOT SEND");
