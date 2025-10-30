@@ -112,36 +112,20 @@ function minecraft188(){
 }
 function credits(){
    let a = window.open("about:blank");
-   a.document.write(`
-  <html>
-    <head>
-      <title>Google Doc</title>
-      <style>
-        html, body {
-          margin: 0;
-          padding: 0;
-          height: 100%;
-          width: 100%;
-        }
-      </style>
-    </head>
-    <body>
-      <h2>Developed by a student at Leigh High</h2>
-      <h3>Help from another student at Leigh High</h3>
-      <strong><h3>LHS Proxy</h3></strong>
-      <ul>
-      <li>P​​r​​o​​x​​y front and backend deployed and put together by site owner</li>
-      <li>P​​r​​o​​x​​​y front-end created by another student</li>
-      <li>U​​​​l​​t​​​​​​r​​a​​​​v​​i​​​​​o​l​​​e​​​t​ p​​​​ro​​​​​x​​​​​​y backend</li>
-      </ul>
-      <p style="color: white;">The front-end is pretty sigma</p>
-      <p>Not much else to say I guess</p>
-      <p style="color: white;">Goguardian is so dogwater</p>
-    </body>
-    
-  </html>
-`);
-   a.document.close();
+
+fetch("https://thatkidfr.github.io/credits/index.html")
+  .then(r => r.text())
+  .then(html => {
+
+    let patched = html.replace(
+      /<head>/i,
+      '<head><base href="https://thatkidfr.github.io/credits">'
+    );
+
+    a.document.open();
+    a.document.write(patched);
+    a.document.close();
+  });
 }
 function logs(){
    let a = window.open("about:blank");
