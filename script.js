@@ -212,6 +212,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Getting Over It', '#26c9b9', '#20ab9d', 'https://development.churchinhuntsville.org/resources/semag/getting-over-it/index.html');
     createButton('Clicker Heroes', '#28d439', '#1db52c', 'https://development.churchinhuntsville.org/resources/semag/clickerheroes/index.html');
     createButton('Tennis', '#1fdb51', '#18b542', 'https://thatkidfr.github.io/tennis');
+    createButton('Invidious', '#3498db', '#2980b9', 'https://inv.nadeko.net');
 
 
     
