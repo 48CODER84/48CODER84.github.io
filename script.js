@@ -171,6 +171,16 @@ document.addEventListener('keydown', function(event) {
       btn.onclick = () => defaultBrowser(url);
       document.body.appendChild(btn);
     }
+      // Add title above buttons
+      const title = document.createElement('h1');
+      title.textContent = 'Alpha Games';
+      title.style.fontWeight = 'bold';
+      title.style.fontFamily = 'Arial, sans-serif';
+      title.style.fontSize = '32px';
+      title.style.textAlign = 'center';
+      title.style.marginTop = '20px';
+      title.style.color = '#ffffff'; // optional - makes it white if you have a dark background
+      document.body.appendChild(title);
 
     const helpBtn = document.createElement('button');
     helpBtn.textContent = 'Help';
@@ -212,7 +222,6 @@ document.addEventListener('keydown', function(event) {
     createButton('Getting Over It', '#26c9b9', '#20ab9d', 'https://development.churchinhuntsville.org/resources/semag/getting-over-it/index.html');
     createButton('Clicker Heroes', '#28d439', '#1db52c', 'https://development.churchinhuntsville.org/resources/semag/clickerheroes/index.html');
     createButton('Tennis', '#1fdb51', '#18b542', 'https://thatkidfr.github.io/tennis');
-    createButton('Superhot', '#3498db', '#2980b9', 'https://abc6782.github.io/game-indexes/super-hot.html');
 
 
     
