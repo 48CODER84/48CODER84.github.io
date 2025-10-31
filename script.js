@@ -179,7 +179,7 @@ document.addEventListener('keydown', function(event) {
       title.style.fontSize = '32px';
       title.style.textAlign = 'center';
       title.style.marginTop = '20px';
-      title.style.color = '#ffffff'; // optional - makes it white if you have a dark background
+      title.style.color = '#d6200f'; // optional - makes it white if you have a dark background
       document.body.appendChild(title);
 
     const helpBtn = document.createElement('button');
