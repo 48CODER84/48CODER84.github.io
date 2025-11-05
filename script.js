@@ -223,6 +223,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Clicker Heroes', '#28d439', '#1db52c', 'https://development.churchinhuntsville.org/resources/semag/clickerheroes/index.html');
     createButton('Tennis', '#1fdb51', '#18b542', 'https://thatkidfr.github.io/tennis');
     createButton('Shell Shock', '#eb8c34', '#c4752b', 'https://shellshock.io/');
+    createButton('Balatro', '#3498db', '#2980b9', 'https://school.endtimeassembly.org/games/balatro/index.html');
 
 
     
