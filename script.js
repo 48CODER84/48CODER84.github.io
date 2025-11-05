@@ -224,6 +224,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Tennis', '#1fdb51', '#18b542', 'https://thatkidfr.github.io/tennis');
     createButton('Shell Shock', '#eb8c34', '#c4752b', 'https://shellshock.io/');
     createButton('Balatro', '#3498db', '#2980b9', 'https://school.endtimeassembly.org/games/balatro/index.html');
+    createButton('Buckshot Roulette', '#3498db', '#2980b9', 'https://school.endtimeassembly.org/games/buckshot/index.html');
 
 
     
