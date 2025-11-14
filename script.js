@@ -222,6 +222,7 @@ document.addEventListener('keydown', function(event) {
     createButton('Balatro', '#3498db', '#2980b9', 'https://school.endtimeassembly.org/games/balatro/index.html');
     createButton('Buckshot Roulette', '#3498db', '#2980b9', 'https://school.endtimeassembly.org/games/buckshot/index.html');
     createButton('Subway Surfers', '#d82cdb', '#b322b5', 'https://development.churchinhuntsville.org/resources/semag/subway-surfers-ny/index.html');
+    createButton('Truffled, 238+ Games and Proxy 🤤🤤', '#2ecc71', '#27ae60', 'https://school.endtimeassembly.org/g');
 
 
     
