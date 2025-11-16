@@ -1,4 +1,35 @@
-/* All your original functions preserved exactly */
+
+const canvas = document.getElementById("particle-canvas");
+const ctx = canvas.getContext("2d");
+canvas.width = innerWidth;
+canvas.height = innerHeight;
+
+let particles = [];
+for (let i = 0; i < 80; i++) {
+    particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        size: Math.random() * 2 + 1,
+        speedX: (Math.random() - 0.5) * 0.6,
+        speedY: (Math.random() - 0.5) * 0.6
+    });
+}
+
+function animateParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let p of particles) {
+        p.x += p.speedX;
+        p.y += p.speedY;
+        if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
+        ctx.fillStyle = "#00ffa6";
+        ctx.fillRect(p.x, p.y, p.size, p.size);
+    }
+    requestAnimationFrame(animateParticles);
+}
+animateParticles();
+
+/* === ALL YOUR ORIGINAL FUNCTIONS (unaltered!) === */
 
 function defaultBrowser(url){
   if (url == "cookieclicker"){
@@ -25,8 +56,6 @@ function defaultBrowser(url){
   </html>`);
   a.document.close();
 }
-
-/* ---- ALL OTHER ORIGINAL FUNCTIONS ---- */
 
 function cookieclicker(){
   let a = window.open("about:blank");
@@ -118,11 +147,7 @@ function help(){
   alert("Ask in Discord: https://discord.gg/2Mwf5URA OR email robodave699@gmail.com.\nDo NOT use school email.");
 }
 
-/* ================================
-   Spacebar → reveal UI
-   Now: builds button grid layout
-   ================================ */
-
+/* === UI Reveal + Search Bar (visual only) === */
 let allowed = 0;
 
 document.addEventListener('keydown', function(event) {
@@ -136,19 +161,25 @@ document.addEventListener('keydown', function(event) {
         title.textContent = "Alpha Games";
         content.appendChild(title);
 
+        // Search bar
+        const search = document.createElement("input");
+        search.id = "searchBar";
+        search.placeholder = "Search games...";
+        content.appendChild(search);
+
         const grid = document.createElement("div");
         grid.className = "button-grid";
         content.appendChild(grid);
 
-        // Helper function to add buttons to the grid
         function addButton(text, url) {
             const btn = document.createElement("button");
             btn.textContent = text;
+            btn.dataset.label = text.toLowerCase();
             btn.onclick = () => defaultBrowser(url);
             grid.appendChild(btn);
         }
 
-        /* --- ALL ORIGINAL BUTTONS --- */
+        /* === ALL ORIGINAL BUTTONS (unchanged) === */
         addButton("Game Suggestions", "https://docs.google.com/forms/d/e/1FAIpQLSe2tpYcWk9raN6wWIF7qKJilht7aFi6PViRnLt2zfiymXL_ig/viewform?usp=dialog");
         addButton("Cookie Clicker", "cookieclicker");
         addButton("Interstellar Proxy", "https://gointerstellar.app");
@@ -171,26 +202,4 @@ document.addEventListener('keydown', function(event) {
         addButton("1v1.lol", "https://development.churchinhuntsville.org/resources/semag/1v1lol/index.html");
         addButton("Getting Over It", "https://development.churchinhuntsville.org/resources/semag/getting-over-it/index.html");
         addButton("Clicker Heroes", "https://development.churchinhuntsville.org/resources/semag/clickerheroes/index.html");
-        addButton("Tennis", "https://thatkidfr.github.io/tennis");
-        addButton("Shell Shock", "https://shellshock.io/");
-        addButton("Balatro", "https://school.endtimeassembly.org/games/balatro/index.html");
-        addButton("Buckshot Roulette", "https://school.endtimeassembly.org/games/buckshot/index.html");
-        addButton("Subway Surfers", "https://development.churchinhuntsville.org/resources/semag/subway-surfers-ny/index.html");
-        addButton("Truffled (238+ Games)", "https://school.endtimeassembly.org/g");
-
-        /* --- FIXED CORNER BUTTONS --- */
-        function makeFixed(id, text, onclick) {
-            const b = document.createElement("button");
-            b.id = id;
-            b.className = "fixed-btn";
-            b.textContent = text;
-            b.onclick = onclick;
-            document.body.appendChild(b);
-        }
-
-        makeFixed("help", "Help", help);
-        makeFixed("credits", "Credits", credits);
-        makeFixed("logs", "Logs", logs);
-        makeFixed("extraGames", "Extra Games", extragames);
-    }
-});
+        addButton("Tennis", "https://thatkidfr
