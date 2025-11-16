@@ -1,6 +1,5 @@
 /* ====================================
-   Alpha Games — style.css (dark theme, 3kh0 v5 inspired)
-   Only visual changes, all original functionality preserved
+   we love noob
    ==================================== */
 
 * {
@@ -22,6 +21,7 @@ body {
   position: relative;
 }
 
+/* Subtle animated background particles */
 body::before {
   content: '';
   position: fixed;
@@ -69,6 +69,7 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* Fixed-position buttons (Help, Credits, Logs, Extra Games) */
 button.fixed {
   position: fixed;
   z-index: 1;
