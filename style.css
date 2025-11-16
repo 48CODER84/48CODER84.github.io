@@ -1,108 +1,99 @@
 /* ====================================
    we love noob
+   larp until you make it
    ==================================== */
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-  background: radial-gradient(circle at center, #0d0d0f, #11121a 80%);
-  color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  overflow-x: hidden;
-  position: relative;
+    background: #0b0c10;
+    overflow-x: hidden;
+    color: white;
 }
 
-/* Subtle animated background particles */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://cdn.jsdelivr.net/gh/Echo-Dev-Labs/3kh0v5/background-particles.png') repeat;
-  opacity: 0.05;
-  z-index: 0;
-  animation: moveBG 60s linear infinite;
+/* --- MOVING PARTICLE BACKGROUND --- */
+#particle-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("https://raw.githubusercontent.com/Echo-Dev-Labs/3kh0v5/main/assets/particles.png");
+    opacity: 0.07;
+    animation: drift 120s linear infinite;
+    z-index: 0;
 }
 
-@keyframes moveBG {
-  0% { background-position: 0 0; }
-  100% { background-position: 2000px 1000px; }
+@keyframes drift {
+    from { background-position: 0 0; }
+    to { background-position: 3000px 1500px; }
 }
 
-h1 {
-  font-size: 32px;
-  font-weight: bold;
-  color: #d6200f;
-  margin-top: 20px;
-  text-align: center;
-  z-index: 1;
-  position: relative;
+/* --- CONTENT HOLDER --- */
+#content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* --- TITLE --- */
+#content h1 {
+    margin-top: 30px;
+    font-size: 40px;
+    color: #d6200f;
+    text-shadow: 0 0 15px #d6200f55;
+}
+
+/* --- GRID LAYOUT FOR BUTTONS --- */
+.button-grid {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+/* --- BUTTON STYLE --- */
 button {
-  background: rgba(40,40,50,0.8);
-  border: none;
-  border-radius: 10px;
-  padding: 12px 20px;
-  margin: 10px;
-  font-size: 16px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  z-index: 1;
-  position: relative;
+    background: rgba(45, 48, 56, 0.75);
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.05);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    backdrop-filter: blur(6px);
 }
 
 button:hover {
-  background: rgba(80,80,100,0.9);
-  transform: scale(1.05);
+    background: rgba(85, 90, 105, 0.9);
+    transform: scale(1.05);
 }
 
-/* Fixed-position buttons (Help, Credits, Logs, Extra Games) */
-button.fixed {
-  position: fixed;
-  z-index: 1;
+/* --- FIXED CORNER BUTTONS --- */
+.fixed-btn {
+    position: fixed;
+    bottom: 15px;
+    padding: 14px 22px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    background: rgba(60, 60, 75, 0.75);
+    z-index: 5;
 }
 
-button#help {
-  bottom: 20px;
-  left: 20px;
-}
-
-button#credits {
-  bottom: 20px;
-  right: 20px;
-}
-
-button#extraGames {
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-object {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Quick fade-in effect when space is pressed */
-body.revealed > * {
-  animation: fadeIn 0.8s ease forwards;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+#credits { right: 15px; }
+#logs { right: 140px; }
+#help { left: 15px; }
+#extraGames {
+    left: 50%;
+    transform: translateX(-50%);
 }
