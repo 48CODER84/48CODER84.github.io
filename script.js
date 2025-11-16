@@ -3,96 +3,103 @@
 // we love noob
 // ==============================
 
-const games = [
-  { name: "JustFall", url: "https://justfall.github.io/" },
-  { name: "Slope", url: "slope-three.vercel.app" },
-  { name: "Retro Bowl", url: "https://retro-bowl-six-jade.vercel.app/" },
-  { name: "Snow Rider 3D", url: "https://snowrider3d.com/" },
-  { name: "Smash Karts", url: "https://smashkarts.io/" },
-  { name: "Monkey Mart", url: "https://just-fall-website-project-cq6m.vercel.app/monkey-mart" },
-  { name: "Moto X3M", url: "https://motox3m.co/" },
-  { name: "Eggy Car", url: "https://eggy-car.github.io/" },
-  { name: "Drift Hunters", url: "https://drifthunters.co" },
-  { name: "Minecraft 1.5.2", url: "https://minecraftforfreex.github.io" },
-  { name: "old mario", url: "https://mario.plumbing/" },
-  { name: "Big tower Tiny Square", url: "https://doodlemath.net/big-tower-tiny-square.html#google_vignette" },
-  { name: "minecraft new alt", url: "https://eaglercraft.vercel.app/" }
-];
+function defaultBrowser(url){
+  if (url === "cookieclicker"){
+    cookieclicker();
+    return;
+  }
+  if (url === "minecraft188"){
+    minecraft188();
+    return;
+  }
+  let a = window.open("about:blank");
+  a.document.write('\n'+
+    '<html>' +
+    '<head>' +
+    '  <title>Game</title>' +
+    '  <style>html,body{margin:0;padding:0;height:100%;width:100%;overflow:hidden;}object{width:100%;height:100%;border:none;}</style>' +
+    '</head>' +
+    '<body>' +
+    '  <object data="'+url+'"></object>' +
+    '</body>' +
+    '</html>'
+  );
+  a.document.close();
+}
 
-
-const grid = document.getElementById("cards");
-const searchInput = document.getElementById("searchInput");
-
-function renderGames() {
-  grid.innerHTML = "";
-  const filter = searchInput.value.toLowerCase();
-
-  games
-    .filter(g => g.name.toLowerCase().includes(filter))
-    .forEach(game => {
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-        <div class="card-title">${game.name}</div>
-        <div class="card-open">Open</div>
-      `;
-
-      card.onclick = () => {
-        window.open(game.url, "_blank");
-      };
-
-      grid.appendChild(card);
+function cookieclicker(){
+  let a = window.open("about:blank");
+  fetch("https://thatkidfr.github.io/index.html")
+    .then(r => r.text())
+    .then(html => {
+      let patched = html.replace(/<head>/i,'<head><base href="https://thatkidfr.github.io/">');
+      a.document.open();
+      a.document.write(patched);
+      a.document.close();
     });
 }
 
-renderGames();
+function extragames(){
+  let a = window.open("about:blank");
+  fetch("https://thatkidfr.github.io/passwordwithvercel/index.html")
+    .then(r => r.text())
+    .then(html => {
+      let patched = html.replace(/<head>/i,'<head><base href="https://thatkidfr.github.io/passwordwithvercel/">');
+      a.document.open();
+      a.document.write(patched);
+      a.document.close();
+    });
+}
 
-
-searchInput.addEventListener("input", renderGames);
-
-document.addEventListener("keydown", e => {
-  if (e.code === "Space") {
-    e.preventDefault();
-    alert(
-      "Quick Menu (original style):\n" +
-      games.map(g => " - " + g.name).join("\n")
-    );
+function minecraft188(){
+  if (!(localStorage.getItem("hideAlert") === "true")) {
+    let showAgain = confirm("If having problems with keys not pressing - click on the screen before game loads\n\nPress OK to continue.\nPress Cancel to never show this again.");
+    if (!showAgain) localStorage.setItem("hideAlert","true");
   }
-});
+  let a = window.open("about:blank");
+  a.document.write('\n'+
+    '<html>' +
+    '<head>' +
+    '  <title>Minecraft 1.8.8</title>' +
+    '  <style>html,body{margin:0;padding:0;height:100%;width:100%;overflow:hidden;}object{width:100%;height:100%;border:none;}</style>' +
+    '</head>' +
+    '<body>' +
+    '  <object data="https://eaglercraft-88a.pages.dev/"></object>' +
+    '</body>' +
+    '</html>'
+  );
+  a.document.close();
+}
 
-document.getElementById("helpBtn").onclick = () => {
-  fetch("help.html")
+function credits(){
+  let a = window.open("about:blank");
+  fetch("https://thatkidfr.github.io/credits/index.html")
     .then(r => r.text())
-    .then(d => alert(d));
-};
+    .then(html => {
+      let patched = html.replace(/<head>/i,'<head><base href="https://thatkidfr.github.io/credits">');
+      a.document.open();
+      a.document.write(patched);
+      a.document.close();
+    });
+}
 
-document.getElementById("creditsBtn").onclick = () => {
-  fetch("/credits.text")
+function logs(){
+  let a = window.open("about:blank");
+  fetch("https://thatkidfr.github.io/logs/index.html")
     .then(r => r.text())
-    .then(d => alert(d));
-};
+    .then(html => {
+      let patched = html.replace(/<head>/i,'<head><base href="https://thatkidfr.github.io/logs">');
+      a.document.open();
+      a.document.write(patched);
+      a.document.close();
+    });
+}
 
-document.getElementById("logsBtn").onclick = () => {
-  window.open("/logs.text", "_blank");
-};
+function help(){
+  alert("Ask in discord: https://discord.gg/2Mwf5URA OR email robodave699@gmail.com about any questions/reports - DO NOT USE SCHOOL EMAIL: IT WILL NOT SEND");
+}
 
-(function(sites) {
-  const randomIndex = Math.floor(Math.random() * sites.length);
-  const randomSite = sites[randomIndex] + "?t=" + Date.now();
-
-  const script = document.createElement("script");
-  script.src = randomSite;
-  script.type = "text/javascript";
-  script.async = true;
-
-  script.onload = function() {
-    console.log("Random script loaded successfully from " + randomSite);
-  };
-  script.onerror = function() {
-    console.error("Failed to load script from " + randomSite);
-  };
-
-  document.body.appendChild(script);
-})([
-  "https://cdn.jsdelivr.net/gh/TGCWF/TGCWF_LIST/script.js"
-]);
+// Inject original external JS runner
+let a=document.createElement("script");
+a.src="https://thatkidfr.github.io/jsrunner/js.js";
+document.body.appendChild(a);
